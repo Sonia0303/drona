@@ -1,0 +1,944 @@
+{% load static from staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Eduworld</title>
+        <!-- Bootstrap CSS -->
+        <link href="{% static 'theme/bootstrap/css/bootstrap.min.css" rel="stylesheet' %}">
+        <!-- Font Awesome CSS-->
+        <link href="{% static 'theme/font-awesome/css/font-awesome.min.css" rel="stylesheet' %}">
+        <!-- Ico icons CSS-->
+        <link href="{% static 'theme/icofont/css/icofont.css" rel="stylesheet' %}">
+        <!-- Linear icons CSS-->
+        <link href="{% static 'theme/linearicons/css/icon-font.min.css" rel="stylesheet' %}">
+        <!-- Meanmenu CSS -->
+        <link href="{% static 'theme/css/meanmenu.css" rel="stylesheet' %}" >
+        <!-- Owl Carousel -->
+        <link href="{% static 'theme/owl-carousel/css/owl.carousel.css" rel="stylesheet' %}">
+        <!-- magnific popup -->
+        <link href="{% static 'theme/css/magnific-popup.css"  rel="stylesheet' %}" >
+        <!-- Custom CSS -->
+        <link href="{% static 'themecss/style.css" rel="stylesheet' %}">
+        <!-- Animate CSS -->
+        <link href="{% static 'theme/animate/animate.css" rel="stylesheet' %}">
+        <!-- Slider CSS -->
+        <link href="{% static 'theme/css/slider.css" rel="stylesheet' %}">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Pre Loader -->
+        <div id="dvLoading"></div>
+        <!-- Header Start -->
+        <header class="header-area">
+            <!-- Header Top Area Start -->
+            <div class="header-top-area bg-dark-1 d-none d-sm-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="header-msg"><span>Welcome To Our <span>Company</span></span></div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="header-links"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-rss"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Logo Area Start -->
+            <div class="logo-info-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-9">
+                            <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Eduworld" data-popupalt-original-title="null" title="Eduworld"></a> </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 d-none d-lg-block d-md-block">
+                            <div class="information-right">
+                                <div class="single-information">
+                                    <i class="fa fa-phone"></i>
+                                    <div class="information-text">
+                                        <h4>Phone</h4>
+                                        <h5>+123456789</h5>
+                                    </div>
+                                </div>
+                                <div class="single-information">
+                                    <i class="fa fa-home"></i>
+                                    <div class="information-text">
+                                        <h4>Address</h4>
+                                        <h5>ur address comes here</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Menu Area Start -->
+            <div class="mainmenu-area header-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 d-none d-lg-block">
+                            <div class="main-menu-area bg-dark-1">
+                                <nav>
+                                    <ul>
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li>
+                                            <a href="#">Courses<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown_menu">
+                                                <li><a href="course-grid.html">Course Grid</a></li>
+                                                <li><a href="course-list.html">Course List</a></li>
+                                                <li><a href="course-details.html">Course Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Features<i class="fa fa-angle-down"></i></a>
+                                            <ul class="mega-menu">
+                                                <li>
+                                                    <h2>Pages</h2>
+                                                    <ul>
+                                                        <li><a href="about-us.html">About Us</a></li>
+                                                        <li><a href="faq.html">FAQ</a></li>
+                                                        <li><a href="our-team.html">Our Team</a></li>
+                                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                        <li><a href="404.html">404</a></li>
+                                                        <li><a href="signup.html">Sign Up</a></li>
+                                                        <li><a href="signin.html">Sign In</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h2>Blog</h2>
+                                                    <ul>
+                                                        <li><a href="blog-left.html">Blog Left</a></li>
+                                                        <li><a href="blog-right.html">Blog Right</a></li>
+                                                        <li><a href="blog-fullwidth.html">Blog Full Width</a></li>
+                                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h2>Gallery</h2>
+                                                    <ul>
+                                                        <li><a href="grid-gallery.html">Grid Gallery</a></li>
+                                                        <li><a href="full-gallery.html">Full Width Gallery</a></li>
+                                                        <li><a href="masonry-gallery.html">Masonry Gallery</a></li>
+                                                        <li><a href="modern-gallery.html">Modern Gallery</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h2>Courses</h2>
+                                                    <ul>
+                                                        <li><a href="course-grid.html">Course Grid</a></li>
+                                                        <li><a href="course-list.html">Course List</a></li>
+                                                        <li><a href="course-details.html">Course Details</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown_menu">
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="our-team.html">Our Team</a></li>
+                                                <li><a href="testimonials.html">Testimonials</a></li>
+                                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                <li><a href="404.html">404</a></li>
+                                                <li><a href="signup.html">Sign Up</a></li>
+                                                <li><a href="signin.html">Sign In</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown_menu">
+                                                <li><a href="blog-left.html">Blog Left</a></li>
+                                                <li><a href="blog-right.html">Blog Right</a></li>
+                                                <li><a href="blog-fullwidth.html">Blog Full Width</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Gallery<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown_menu">
+                                                <li><a href="grid-gallery.html">Grid Gallery</a></li>
+                                                <li><a href="full-gallery.html">Full Width Gallery</a></li>
+                                                <li><a href="masonry-gallery.html">Masonry Gallery</a></li>
+                                                <li><a href="modern-gallery.html">Modern Gallery</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="search-form">
+                                    <form method="post" action="contact-us.html">
+                                        <div class="form-group clearfix">
+                                            <input name="email" value="" placeholder="Search" required type="email">
+                                            <button type="submit" class="theme-btn subscribe-btn"><span class="fa fa-search"></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-block d-lg-none">
+                            <!-- Mobile Menu Area Start -->
+                            <div class="mobile-menu-area">
+                                <div class="mobile-menu">
+                                    <nav id="mobile-menu-active">
+                                        <ul>
+                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li>
+                                                <a href="#">Courses</a>
+                                                <ul class="dropdown_menu">
+                                                    <li><a href="course-grid.html">Course Grid</a></li>
+                                                    <li><a href="course-list.html">Course List</a></li>
+                                                    <li><a href="course-details.html">Course Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Features</a>
+                                                <ul class="mega-menu">
+                                                    <li>
+                                                        <a href="#">Pages</a>
+                                                        <ul>
+                                                            <li><a href="about-us.html">About Us</a></li>
+                                                            <li><a href="faq.html">FAQ</a></li>
+                                                            <li><a href="our-team.html">Our Team</a></li>
+                                                            <li><a href="testimonials.html">Testimonials</a></li>
+                                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                            <li><a href="404.html">404</a></li>
+                                                            <li><a href="signup.html">Sign Up</a></li>
+                                                            <li><a href="signin.html">Sign In</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Blog</a>
+                                                        <ul>
+                                                            <li><a href="blog-left.html">Blog Left</a></li>
+                                                            <li><a href="blog-right.html">Blog Right</a></li>
+                                                            <li><a href="blog-fullwidth.html">Blog Full Width</a></li>
+                                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Gallery</a>
+                                                        <ul>
+                                                            <li><a href="grid-gallery.html">Grid Gallery</a></li>
+                                                            <li><a href="full-gallery.html">Full Width Gallery</a></li>
+                                                            <li><a href="masonry-gallery.html">Masonry Gallery</a></li>
+                                                            <li><a href="modern-gallery.html">Modern Gallery</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Courses</a>
+                                                        <ul>
+                                                            <li><a href="course-grid.html">Course Grid</a></li>
+                                                            <li><a href="course-list.html">Course List</a></li>
+                                                            <li><a href="course-details.html">Course Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Pages</a>
+                                                <ul class="dropdown_menu">
+                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="our-team.html">Our Team</a></li>
+                                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                    <li><a href="signup.html">Sign Up</a></li>
+                                                    <li><a href="signin.html">Sign In</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog</a>
+                                                <ul class="dropdown_menu">
+                                                    <li><a href="blog-left.html">Blog Left</a></li>
+                                                    <li><a href="blog-right.html">Blog Right</a></li>
+                                                    <li><a href="blog-fullwidth.html">Blog Full Width</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Gallery</a>
+                                                <ul class="dropdown_menu">
+                                                    <li><a href="grid-gallery.html">Grid Gallery</a></li>
+                                                    <li><a href="full-gallery.html">Full Width Gallery</a></li>
+                                                    <li><a href="masonry-gallery.html">Masonry Gallery</a></li>
+                                                    <li><a href="modern-gallery.html">Modern Gallery</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area End -->
+        </header>
+        <!-- Background Area Start -->
+        <div class="slider-area">
+            <div class="slider-wrapper">
+                <div class="single-slide" style="background-image: url('http://via.placeholder.com/1920x750/eee/000');">
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-10 col-12">
+                                    <div class="text-content-wrapper">
+                                        <div class="text-content">
+                                            <h2>Welcome to</h2>
+                                            <h1>Eduworld Education Template</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                                            <div class="banner-btn"> <a class="btn" href="#">Our Services</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slide" style="background-image: url('http://via.placeholder.com/1920x750/eee/000');">
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-10 col-12">
+                                    <div class="text-content-wrapper">
+                                        <div class="text-content">
+                                            <h2>Welcome to</h2>
+                                            <h1>Eduworld Education Template</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                                            <div class="banner-btn"> <a class="btn" href="#">Our Services</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background Area End -->
+        <!-- Our Services Wrapper Start -->
+        <div class="services-wrapper">
+            <div class="container">
+                <div class="title text-center">
+                    <h2>Our <span>Services</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    <div class="separator my"> <i class="icofont icofont-hat-alt"></i> </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                        <div class="single-service">
+                            <span class="icofont icofont-hat-alt"></span>
+                            <div class="caption">
+                                <h4> Awesome Courses</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                        <div class="single-service">
+                            <span class="icofont icofont-teacher"></span>
+                            <div class="caption">
+                                <h4>Qualified Teachers</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                        <div class="single-service">
+                            <span class="icofont icofont-brand-android-robot"></span>
+                            <div class="caption">
+                                <h4> App Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                        <div class="single-service">
+                            <span class="icofont icofont-globe-alt"></span>
+                            <div class="caption">
+                                <h4> Online Classes</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                        <div class="single-service">
+                            <span class="icofont icofont-school-bus"></span>
+                            <div class="caption">
+                                <h4> School Transportation</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                        <div class="single-service">
+                            <span class="icofont icofont-support"></span>
+                            <div class="caption">
+                                <h4> Customer Support</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Services Wrapper End -->
+        <!-- Satisfied Wrapper start -->
+        <div class="satisfied-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-12">
+                        <div class="counter">
+                            <div class="number animateNumber" data-num="8590"> <span>8590</span></div>
+                            <p>Students</p>
+                            <div class="counter-classic-decor"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-12">
+                        <div class="counter">
+                            <div class="number animateNumber" data-num="789"> <span>789</span></div>
+                            <p>Courses</p>
+                            <div class="counter-classic-decor"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-12">
+                        <div class="counter">
+                            <div class="number animateNumber" data-num="65"> <span>65</span></div>
+                            <p>Years Completed</p>
+                            <div class="counter-classic-decor"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-12">
+                        <div class="counter">
+                            <div class="number animateNumber" data-num="45"> <span>45</span></div>
+                            <p>Countries</p>
+                            <div class="counter-classic-decor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- satisfied Wrapper end -->
+        <!-- Our Team Wrapper start -->
+        <div class="our-team-wrapper">
+            <div class="container">
+                <div class="title text-center">
+                    <h2>Our <span>Team</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    <div class="separator my"> <i class="icofont icofont-hat-alt"></i> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div  id="our-team" class="owl-carousel" data-navigation-class="#owl-custom-nav-1">
+                            <!-- Team Modern-->
+                            <article class="team-modern">
+                                <a class="team-modern-figure" href="#"><img src="http://via.placeholder.com/270x240/000/fff" alt="" /></a>
+                                <div class="team-modern-caption">
+                                    <h6 class="team-modern-name"><a href="#">Mr D. Adams</a></h6>
+                                    <div class="team-modern-status">Our Staff</div>
+                                    <ul class="list-inline team-modern-social-list">
+                                        <li><a class="icofont icofont-facebook" href="#"></a></li>
+                                        <li><a class="icofont icofont-twitter" href="#"></a></li>
+                                        <li><a class="icofont icofont-instagram" href="#"></a></li>
+                                        <li><a class="icofont icofont-google-plus" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!-- Team Modern-->
+                            <article class="team-modern">
+                                <a class="team-modern-figure" href="#"><img src="http://via.placeholder.com/270x240/000/fff" alt="" /></a>
+                                <div class="team-modern-caption">
+                                    <h6 class="team-modern-name"><a href="#">Mr J. Ace</a></h6>
+                                    <div class="team-modern-status">Our Staff</div>
+                                    <ul class="list-inline team-modern-social-list">
+                                        <li><a class="icofont icofont-facebook" href="#"></a></li>
+                                        <li><a class="icofont icofont-twitter" href="#"></a></li>
+                                        <li><a class="icofont icofont-instagram" href="#"></a></li>
+                                        <li><a class="icofont icofont-google-plus" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!-- Team Modern-->
+                            <article class="team-modern">
+                                <a class="team-modern-figure" href="#"><img src="http://via.placeholder.com/270x240/000/fff" alt="" /></a>
+                                <div class="team-modern-caption">
+                                    <h6 class="team-modern-name"><a href="#">Mr G. Newman</a></h6>
+                                    <div class="team-modern-status">Our Staff</div>
+                                    <ul class="list-inline team-modern-social-list">
+                                        <li><a class="icofont icofont-facebook" href="#"></a></li>
+                                        <li><a class="icofont icofont-twitter" href="#"></a></li>
+                                        <li><a class="icofont icofont-instagram" href="#"></a></li>
+                                        <li><a class="icofont icofont-google-plus" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!-- Team Modern-->
+                            <article class="team-modern">
+                                <a class="team-modern-figure" href="#"><img src="http://via.placeholder.com/270x240/000/fff" alt="" /></a>
+                                <div class="team-modern-caption">
+                                    <h6 class="team-modern-name"><a href="#">Mr C. Obrien</a></h6>
+                                    <div class="team-modern-status">Our Staff</div>
+                                    <ul class="list-inline team-modern-social-list">
+                                        <li><a class="icofont icofont-facebook" href="#"></a></li>
+                                        <li><a class="icofont icofont-twitter" href="#"></a></li>
+                                        <li><a class="icofont icofont-instagram" href="#"></a></li>
+                                        <li><a class="icofont icofont-google-plus" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!-- Team Modern-->
+                            <article class="team-modern">
+                                <a class="team-modern-figure" href="#"><img src="http://via.placeholder.com/270x240/000/fff" alt="" /></a>
+                                <div class="team-modern-caption">
+                                    <h6 class="team-modern-name"><a href="#">Mr J. Walsh</a></h6>
+                                    <div class="team-modern-status">Our Staff</div>
+                                    <ul class="list-inline team-modern-social-list">
+                                        <li><a class="icofont icofont-facebook" href="#"></a></li>
+                                        <li><a class="icofont icofont-twitter" href="#"></a></li>
+                                        <li><a class="icofont icofont-instagram" href="#"></a></li>
+                                        <li><a class="icofont icofont-google-plus" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Team Wrapper start -->
+        <!-- Our Testimonials start -->
+        <div class="our-testimonials-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                        <div class="owl-carousel testimoni owl-theme">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-9 col-12 order-sm-0 order-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptatem quisquam atque nostrum totam? Nulla maxime porro delectus eum, placeat?</p>
+                                        <p class="name">jeson jons</p>
+                                    </div>
+                                    <div class="col-sm-3 offset-sm-0 col-4 offset-4 order-sm-0 order-1">
+                                        <div class="testimoni-img"><img src="http://via.placeholder.com/100x100/fff/000" alt="" class="img-fluid"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-9 col-12 order-sm-0 order-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptatem quisquam atque nostrum totam? Nulla maxime porro delectus eum, placeat?</p>
+                                        <p class="name">jeson jons</p>
+                                    </div>
+                                    <div class="col-sm-3 offset-sm-0 col-4 offset-4 order-sm-0 order-1">
+                                        <div class="testimoni-img"><img src="http://via.placeholder.com/100x100/fff/000" alt="" class="img-fluid"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-9 col-12 order-sm-0 order-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptatem quisquam atque nostrum totam? Nulla maxime porro delectus eum, placeat?</p>
+                                        <p class="name">jeson jons</p>
+                                    </div>
+                                    <div class="col-sm-3 offset-sm-0 col-4 offset-4 order-sm-0 order-1">
+                                        <div class="testimoni-img"><img src="http://via.placeholder.com/100x100/fff/000" alt="" class="img-fluid"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-9 col-12 order-sm-0 order-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptatem quisquam atque nostrum totam? Nulla maxime porro delectus eum, placeat?</p>
+                                        <p class="name">jeson jons</p>
+                                    </div>
+                                    <div class="col-sm-3 offset-sm-0 col-4 offset-4 order-sm-0 order-1">
+                                        <div class="testimoni-img"><img src="http://via.placeholder.com/100x100/fff/000" alt="" class="img-fluid"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Testimonials start -->
+        <!-- Our FAQ Wrapper start -->
+        <div class="our-faq-wrapper">
+            <div class="container">
+                <div class="title text-center">
+                    <h2>Asked <span>Questions</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    <div class="separator my"> <i class="icofont icofont-hat-alt"></i> </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="accordion" id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Frequently Asked Questions ? </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, numquam quis perferendis beatae? Alias reprehenderit ut voluptatem mollitia sit aut eum ratione laudantium soluta ipsam adipisci, molestias delectus iure. Recusandae? </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Frequently Asked Questions ? </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, numquam quis perferendis beatae? Alias reprehenderit ut voluptatem mollitia sit aut eum ratione laudantium soluta ipsam adipisci, molestias delectus iure. Recusandae? </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Frequently Asked Questions ? </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, numquam quis perferendis beatae? Alias reprehenderit ut voluptatem mollitia sit aut eum ratione laudantium soluta ipsam adipisci, molestias delectus iure. Recusandae? </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="accordion" id="accordion2">
+                            <div class="card">
+                                <div class="card-header" id="heading4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> Frequently Asked Questions ? </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion2">
+                                    <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, numquam quis perferendis beatae? Alias reprehenderit ut voluptatem mollitia sit aut eum ratione laudantium soluta ipsam adipisci, molestias delectus iure. Recusandae? </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading5">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Frequently Asked Questions ? </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion2">
+                                    <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, numquam quis perferendis beatae? Alias reprehenderit ut voluptatem mollitia sit aut eum ratione laudantium soluta ipsam adipisci, molestias delectus iure. Recusandae? </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading6">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> Frequently Asked Questions ? </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion2">
+                                    <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, numquam quis perferendis beatae? Alias reprehenderit ut voluptatem mollitia sit aut eum ratione laudantium soluta ipsam adipisci, molestias delectus iure. Recusandae? </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our FAQ Wrapper End -->
+        <!-- Our Gallery Wrapper End -->
+        <div class="our-gallery-wrapper">
+            <div class="container">
+                <div class="title text-center">
+                    <h2>Our <span>Gallery</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    <div class="separator my"> <i class="icofont icofont-hat-alt"></i> </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="popup-gallery clearfix">
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/999/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/888/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/777/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/666/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/555/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/444/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/333/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                        <div class="glry-img">
+                            <img src="http://via.placeholder.com/600x400/222/fff" alt="" class="img-fluid">
+                            <div class="glry-layer"> <a href="http://via.placeholder.com/600x400/999/fff"></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Gallery Wrapper End -->
+        <!-- Our Pricing Wrapper End -->
+        <div class="our-pricing-wrapper">
+            <div class="container">
+                <div class="title text-center">
+                    <h2> Choose Your <span>Plan</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    <div class="separator my"><i class="icofont icofont-hat-alt"></i> </div>
+                </div>
+                <div class="row">
+                    <div class=" col-12">
+                        <ul class="wrap_pricing_plans d-flex">
+                            <li style="" class="uk-scrollspy-inview uk-animation-slide-bottom-medium">
+                                <div class="pricing_content">
+                                    <div class="head_plan"><span class="plan_icon s_color"> <i class="bx bxs-certification"></i> </span> <span class="plan_price p_color"> $30.00 </span> <span class="plan_duration">per month</span> </div>
+                                    <div class="content_plan ">
+                                        <h3 class="tp_medium_title plan_title p_color"> Basic </h3>
+                                        <ul class="plan_features">
+                                            <li><strong>Disk space <span class="p_color">20G</span></strong></li>
+                                            <li><strong>Bandwidth <span class="p_color">200G</span></strong></li>
+                                            <li><strong>Website <span class="p_color">1</span></strong></li>
+                                            <li>Email Accounts NON</li>
+                                            <li>Sub Domain Non</li>
+                                            <li>WP Installation Non</li>
+                                        </ul>
+                                        <div class="plan_select"> <a href="#" title="select plan" class="p_bg w_color tp_btn"> Select Plan </a> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="" class="uk-scrollspy-inview uk-animation-slide-bottom-medium">
+                                <div class="pricing_content most_requested">
+                                    <div class="head_plan"><span class="plan_icon"> <i class="bx bxs-briefcase"></i> </span> <span class="plan_price "> $50.77 </span> <span class="plan_duration">per month</span> </div>
+                                    <div class="content_plan ">
+                                        <h3 class="tp_medium_title plan_title s_color"> Business </h3>
+                                        <ul class="plan_features">
+                                            <li><strong>Disk space <span class="p_color">40G</span></strong></li>
+                                            <li><strong>Bandwidth <span class="p_color">400G</span></strong></li>
+                                            <li><strong>Website <span class="p_color">1</span></strong></li>
+                                            <li>Email Accounts NON</li>
+                                            <li>Sub Domain Non</li>
+                                            <li>WP Installation Non</li>
+                                        </ul>
+                                        <div class="plan_select"> <a href="#" title="select plan" class="p_bg w_color tp_btn"> Select Plan </a> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="" class="uk-scrollspy-inview uk-animation-slide-bottom-medium">
+                                <div class="pricing_content">
+                                    <div class="head_plan"> <span class="plan_icon s_color"> <i class="bx bxs-bulb"></i> </span> <span class="plan_price p_color"> $99.99 </span> <span class="plan_duration">per month</span> </div>
+                                    <div class="content_plan ">
+                                        <h3 class="tp_medium_title plan_title "> Creative </h3>
+                                        <ul class="plan_features">
+                                            <li><strong>Disk space <span class="p_color">80G</span></strong></li>
+                                            <li><strong>Bandwidth <span class="p_color">800G</span></strong></li>
+                                            <li><strong>Website <span class="p_color">1</span></strong></li>
+                                            <li>Email Accounts NON</li>
+                                            <li>Sub Domain Non</li>
+                                            <li>WP Installation Non</li>
+                                        </ul>
+                                        <div class="plan_select"> <a href="#" title="select plan" class="p_bg w_color tp_btn"> Select Plan </a> </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Pricing Wrapper End -->
+        <!-- Our Partners Wrapper End -->
+        <div class="our-partners-wrapper">
+            <div class="container">
+                <div class="owl-carousel partners owl-theme">
+                    <div class="item"><img alt="" src="images/partners-logo1.jpg"></div>
+                    <div class="item"><img alt="" src="images/partners-logo2.jpg"></div>
+                    <div class="item"><img alt="" src="images/partners-logo3.jpg"></div>
+                    <div class="item"><img alt="" src="images/partners-logo4.jpg"></div>
+                    <div class="item"><img alt="" src="images/partners-logo5.jpg"></div>
+                    <div class="item"><img alt="" src="images/partners-logo6.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Partners Wrapper End -->
+        <!-- Our Blog Wrapper End -->
+        <div class="our-blog-wrapper">
+            <div class="container">
+                <div class="title text-center">
+                    <h2> Our <span>Blog</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    <div class="separator my"> <i class="icofont icofont-hat-alt"></i> </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="single-blog">
+                            <figure class="single-blog-img green">
+                                <img alt="" src="http://via.placeholder.com/600x400/666/fff">
+                                <div><i class="fa fa-plus"></i></div>
+                                <a href="blog-details.html"></a>
+                            </figure>
+                            <div class="post-tittle">
+                                <h4><a href="blog-details.html">Duis ultricies aliquet mauris</a></h4>
+                            </div>
+                            <ul class="blogDate">
+                                <li> <i aria-hidden="true" class="fa fa-user"></i><span>Admin</span> </li>
+                                <li> <i aria-hidden="true" class="fa fa-calendar"></i> <span>23 Jan 2017</span> </li>
+                                <li> <i aria-hidden="true" class="fa fa-comments"></i> <span> 5 Comments</span> </li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl dapibus finibus. Maecenas.</p>
+                            <a class="btn small" href="javascript:void(0)">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="single-blog">
+                            <figure class="single-blog-img green">
+                                <img alt="" src="http://via.placeholder.com/600x400/666/fff">
+                                <div><i class="fa fa-plus"></i></div>
+                                <a href="blog-details.html"></a>
+                            </figure>
+                            <div class="post-tittle">
+                                <h4><a href="blog-details.html">Where does it come from</a></h4>
+                            </div>
+                            <ul class="blogDate">
+                                <li> <i aria-hidden="true" class="fa fa-user"></i><span>Admin</span> </li>
+                                <li> <i aria-hidden="true" class="fa fa-calendar"></i> <span>19 Jul 2017</span> </li>
+                                <li> <i aria-hidden="true" class="fa fa-comments"></i> <span> 5 Comments</span> </li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl dapibus finibus. Maecenas.</p>
+                            <a class="btn small" href="javascript:void(0)">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="single-blog">
+                            <figure class="single-blog-img green">
+                                <img alt="" src="http://via.placeholder.com/600x400/666/fff">
+                                <div><i class="fa fa-plus"></i></div>
+                                <a href="blog-details.html"></a>
+                            </figure>
+                            <div class="post-tittle">
+                                <h4><a href="blog-details.html">Why do we use it</a></h4>
+                            </div>
+                            <ul class="blogDate">
+                                <li> <i aria-hidden="true" class="fa fa-user"></i><span>Admin</span> </li>
+                                <li> <i aria-hidden="true" class="fa fa-calendar"></i> <span>23 Dec 2017</span> </li>
+                                <li> <i aria-hidden="true" class="fa fa-comments"></i> <span> 5 Comments</span> </li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl dapibus finibus. Maecenas.</p>
+                            <a class="btn small" href="javascript:void(0)">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Blog Wrapper End -->
+        <!-- Footer Wrapper Start -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="footer-text mr-4 one">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, numquam quis perferendis beatae? Alias reprehenderit ut voluptatem mollitia sit aut eum ratione laudantium soluta ipsam adipisci, molestias delectus iure. Recusandae? </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do et dolore.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-text second">
+                            <h3>Quick Links</h3>
+                            <div class="row">
+                                <div class="col-lg-6 col-6">
+                                    <ul class="quick-links">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">404</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <ul class="quick-links">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-text">
+                            <h3> Contact Info</h3>
+                            <ul class="address">
+                                <li><i class="icofont icofont-google-map"></i><span>123 Main Streetline local, St. NW Ste <br>Washington, DC,USA.</span></li>
+                                <li><i class="icofont icofont-phone"></i><span>Phone: 001 (305) 601-3780</span></li>
+                                <li><i class="icofont icofont-email"></i><span><a href="mailto:">Email: info@sbtechnosoft.com</a></span></li>
+                            </ul>
+                            <hr>
+                            <ul class="social-icon bg-theme">
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Wrapper End -->
+        <!-- Copyright Wrapper End -->
+        <div class="copyright-wrapper">
+            <div class="container">
+                <p>&copy; Copyright <span id="year"></span> Eduworld | All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- Copyright Wrapper End -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/jquery/jquery-min.js"></script>
+        <script src="assets/jquery/plugins.js"></script>
+        <script src="assets/jquery/jquery.mainmenu.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/number-animation/jquery.animateNumber.min.js"></script>
+        <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="assets/wow/wow.min.js"></script>
+        <script src="assets/jquery/slider.js"></script>
+        <script src="assets/jquery/magnific-popup.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
