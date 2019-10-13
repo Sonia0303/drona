@@ -15,5 +15,5 @@ class SignUpView(CreateView):
 
 
 class HomeView(LoginRequiredMixin, TemplateView):
-    template_name = "home.html"
+    template_name = "base.html"
 
