@@ -696,7 +696,7 @@ div.title {
 }
 .satisfied-wrapper {
 	float: left;
-	background: url(http://via.placeholder.com/2000x1333/000/fff);
+	/*background: url(http://via.placeholder.com/2000x1333/000/fff);*/
 	text-align: center;
 	width: 100%;
 	position: relative;
@@ -964,7 +964,7 @@ div.title {
    padding: 90px 0 103px;
 }
 .our-testimonials-wrapper {
-	background: url("http://via.placeholder.com/2000x1333/000/fff") no-repeat center center / cover;
+	/*background: url("http://via.placeholder.com/2000x1333/000/fff") no-repeat center center / cover;*/
 	padding: 90px 0 103px;
 	position: relative;
 	z-index: 1;
@@ -1393,7 +1393,7 @@ div.title {
 	float: left;
 	width: 100%;
 	padding: 90px 0 83px;
-	background: url("http://via.placeholder.com/2000x1333/000/fff") no-repeat center center / cover;
+	/*background: url("http://via.placeholder.com/2000x1333/000/fff") no-repeat center center / cover;*/
 	position: relative;
 	z-index: 9;	
 }
