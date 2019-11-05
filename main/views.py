@@ -14,6 +14,6 @@ class SignUpView(CreateView):
     form_class = UserCreationForm
 
 
-class HomeView(LoginRequiredMixin, TemplateView):
+class HomeView(TemplateView):
     template_name = "base.html"
 
